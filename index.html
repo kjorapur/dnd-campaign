@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Traveling Through Hexes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="When traveling from one city to another, or distances that are measured on the world map, we will be using special rules. When traveling over land, the party is assumed to move around 24 mi/day (one hex) for an 8-hour day of walking. However, you may choose to move faster to get to your destination quicker, or slower to attract ">
+    <link rel="stylesheet" href="theme.css">
+    <style>
+    
+.normal_text {
+font-family: Arial;
+font-size: 11.0PT;
+color: #000000;
+line-height: 1.15;
+direction: ltr;
+}
+h1 {
+font-size: 20.0PT;
+padding-top: 20.0PT;
+padding-bottom: 6.0PT;
+direction: ltr;
+}
+h2 {
+font-size: 16.0PT;
+padding-top: 18.0PT;
+padding-bottom: 6.0PT;
+direction: ltr;
+}
+h3 {
+font-size: 14.0PT;
+color: #434343;
+padding-top: 16.0PT;
+padding-bottom: 4.0PT;
+direction: ltr;
+}
+h4 {
+font-size: 12.0PT;
+color: #666666;
+padding-top: 14.0PT;
+padding-bottom: 4.0PT;
+direction: ltr;
+}
+h5 {
+font-size: 11.0PT;
+color: #666666;
+padding-top: 12.0PT;
+padding-bottom: 4.0PT;
+direction: ltr;
+}
+h6 {
+font-size: 11.0PT;
+color: #666666;
+font-style: italic;
+padding-top: 12.0PT;
+padding-bottom: 4.0PT;
+direction: ltr;
+}
+.title {
+font-size: 26.0PT;
+padding-bottom: 3.0PT;
+direction: ltr;
+}
+.subtitle {
+font-family: Arial;
+font-size: 15.0PT;
+color: #666666;
+padding-bottom: 16.0PT;
+direction: ltr;
+}
+
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+    <ul>
+        <li><a href="index.html">Traveling Through Hexes</a></li>
+    </ul>
+    </nav>
+</header>
+<div class="content"clear: both; overflow: auto; ">
+<div style="clear: both;">&nbsp;</div><br><div class="title" style='direction: ltr; '><span style=''>Traveling Through Hexes
+</span></div><p class="normal_text" style='direction: ltr; '><span style=''>When traveling from one city to another, or distances that are measured on the world map, we will be using special rules. When traveling over land, the party is assumed to move around 24 mi/day (one hex) for an 8-hour day of walking. However, you may choose to move faster to get to your destination quicker, or slower to attract less attention from others who may also be on the road. (Note: For slow and fast walking paces, you will only see the benefit over more than one day of using the pace. I.e., no slow-fast-slow-etc.) These speeds are listed in the table below.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><table><tr><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style=''><strong>Pace
+</strong></span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style=''><strong>Speed
+</strong></span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style=''><strong>Effects
+</strong></span></p></td></tr><tr><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style=''>Slow
+</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style=''>0.5 hex/day
+</span></p></td><td><li><span style=''>+5 to Traversal Checks and Stealth checks
+</span></li><li><span style=''>+5 to Saving Throws against Environmental Hazards
+</span></li><li><span style=''>DC 9+(1 per day) Wisdom Saving Throw at the end of the day to not suffer exhaustion
+</span></li></td></tr><tr><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style=''>Regular
+</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style=''>1 hex/day
+</span></p></td><td><li><span style=''>
+</span></li></td></tr><tr><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style=''>Fast
+</span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style=''>1.5 hex/day
+</span></p></td><td><li><span style=''>-5 to Traversal Checks and Stealth checks
+</span></li><li><span style=''>-5 to Saving Throws against Environmental Hazards
+</span></li><li><span style=''>DC 9+(1 per day) Constitution Saving Throw at the end of the day to not suffer exhaustion
+</span></li></td></tr></table><h1 style='direction: ltr; '><span style=''>Rules for Traveling
+</span></h1><p class="normal_text" style='direction: ltr; '><span style=''>We will run traveling days in stages. The first stage occurs on all days (steps 1-2). The second stage (steps 3-4) only occurs if there are no towns or cities that the party can pass through on their journey:
+</span></p><ol style="padding-left: 20.0px;"><li><span style=''>Each day, the party will choose 1 character to act as the party’s guide for the day and 2 others to be on watch duty for the night (if applicable, see 3-4).
+</span></li><li><span style=''>The guide directs where the party goes and makes a </span><span style=''><em>Traversal Check </em></span><span style=''>against the hex’s terrain DC</span><span style=''>, and the party moves in the chosen direction.
+</span></li><li><span style=''>Traversal Checks are a Skill Check from among the following: Acrobatics, Athletics, History, Nature, or Survival.
+</span></li><li><span style=''>Failing a Traversal Check results in the party getting overworked, lost, or just drained. Each party member gains a level of exhaustion.
+</span></li></ol><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><table><tr><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style=''><strong>Terrain type (color)
+</strong></span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style=''><strong>Traversal Check DC
+</strong></span></p></td></tr><tr><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='color: #ffffff; '><strong>Grassland/Fields/Rolling Hills
+</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='color: #ffffff; '><strong>(Green)
+</strong></span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style=''>15
+</span></p></td></tr><tr><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style=''><strong>Hilly/Craggy/Steep
+</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style=''><strong>(Lime)
+</strong></span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style=''>18
+</span></p></td></tr><tr><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='color: #ffffff; '><strong>Thick Forest/Jungle/Swamp
+</strong></span></p><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style='color: #ffffff; '><strong>(Olive)
+</strong></span></p></td><td><p class="normal_text" style='line-height: 1.0; direction: ltr; '><span style=''>20
+</span></p></td></tr></table><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>The following steps then only occur if there is no large enough settlement in the current hex:
+</span></p><ol style="padding-left: 20.0px;"><li><span style=''>The party makes a group (averaged) Stealth check to see if anything encounters them on their travels&nbsp;&nbsp;(DC hidden).
+</span></li><li><span style=''>At night, two members chosen for watch duty make a group (averaged) Perception or Investigation check to pass the night (DC hidden).
+</span></li></ol><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>Unfortunately, doing a job for more than 2 days (3 for Chia and Eldith) in a row is very tiring. You gain a level of exhaustion for each day in a row you do a job after the second day.
+</span></p>
+</div><footer>
+    Created for free by
+    <a href="https://gdocweb.com" target="_blank">gdocweb</a>. <br>
+    Convert Google Docs files to full fledged websites <b>for free</b>.
+</footer>
+<script>
+function toggleMenu() {
+    var header = document.querySelector('header');
+    header.classList.toggle('nav-active');
+}
+
+function toggleSubmenu(event, submenuId) {
+    var submenu = document.getElementById(submenuId);
+    var parentLi = submenu.parentElement;
+    parentLi.classList.toggle('submenu-active');
+    event.stopPropagation();
+}
+
+window.onclick = function(event) {
+    var submenus = document.getElementsByClassName("submenu");
+    for (var i = 0; i < submenus.length; i++) {
+        var parentLi = submenus[i].parentElement;
+        if (!parentLi.contains(event.target)) {
+            parentLi.classList.remove('submenu-active');
+        }
+    }
+}
+</script>
+</body>
+</html>
